@@ -3,17 +3,26 @@ package net.mauhiz.rael;
 import java.util.Calendar;
 import java.util.TreeSet;
 
-public class Membre extends Artiste {
+/**
+ * Représente un artiste par rapport à un groupe donné
+ * 
+ * @author All Users
+ */
+public class Membre extends Humain {
+    /**
+     * Le membre joue-t-il encore dans ce groupe ?
+     */
     private boolean       actif;
-    private Calendar      date_de_sortie;
-    private Calendar      date_dentree;
-    private Artiste       identite;
+    /**
+     * Date d'entrée de cet artiste dans le groupe
+     */
+    private Calendar      dateArrive;
+    /**
+     * Date ou l'artiste a quitté le groupe, si il l'a quitté
+     */
+    private Calendar      dateLeft;
     /**
      * Quelles sont les différents instruments joués par ce membre dans ce groupe ?
      */
     private TreeSet<Role> roles;
-
-    public Membre() {
-        this.roles = new TreeSet<Role>();
-    }
 }
