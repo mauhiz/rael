@@ -4,20 +4,53 @@ import java.io.File;
 import java.util.Calendar;
 import java.util.TreeSet;
 
+/**
+ * Représente un album produit par un certain groupe en une certain année
+ * 
+ * @author All Users
+ */
 public class Album implements Comparable<Album> {
-    private Calendar         date_de_parution;
+    /**
+     * Date de parution de l'album
+     */
+    private Calendar         dateParution;
+    /**
+     * Release par défaut affichée par RAEL, les autres release étant accessible en cliquant un peu
+     */
+    private Release          defaultRelease;
     /**
      * Jaquette par défaut de l'album, si il n'y en a pas d'autre spécifiée via freedb.
      */
-    private File             default_jaquette;
+    private File             jaquetteDefault;
+    /**
+     * Maison de disque ayant supervisee la production de l'album
+     */
+    private MaisonDeDisque   maisonDeDisque;
+    /**
+     * Différentes releases du meme album (pour les identifier via freedb par exemple)
+     */
     private TreeSet<Release> releases;
+    /**
+     * La review de cet album, si elle existe
+     */
     private Review           review;
-    private String           titre_album;
+    /**
+     * Titre de l'album
+     */
+    private String           titreAlbum;
+    /**
+     * Utilisateur ayant ajouté cet album à la base de données
+     */
+    private Utilisateur      userAjouteur;
 
     /**
      * Classement des albums par défaut selon leur date de parution.
      */
     public int compareTo(final Album o) {
-        return this.date_de_parution.compareTo(o.date_de_parution);
+        if (this.dateParution != o.dateParution) {
+            return this.dateParution.compareTo(o.dateParution);
+        } else {
+            return this.titreAlbum.compareTo(o.titreAlbum);
+        }
     }
 }
