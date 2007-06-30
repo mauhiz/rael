@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<project default="tomcat_local" basedir=".">
+
+	<target name="tomcat_local" depends="jar">
+		<property name="tomcat" location="C:\Program Files\Apache Software Foundation\Tomcat 6.0\webapps\rael" />
+
+		<copy todir="${tomcat}" overwrite="true">
+			<fileset dir="site">
+			</fileset>
+			<fileset file="rael">
+			</fileset>
+
+		</copy>
+		<copy todir="${tomcat}/WEB-INF/lib/" overwrite="true">
+			<fileset file="rael.jar">
+			</fileset>
+
+		</copy>
+	</target>
+	<target name="jar">
+		<javac srcdir="src" destdir="bin" classpath="jarfile" debug="on">
+		</javac>
+		<jar basedir="bin" destfile="rael.jar">
+		</jar>
+	</target>
+</project>
