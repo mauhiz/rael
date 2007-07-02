@@ -1,7 +1,11 @@
 package net.mauhiz.rael;
 
+import java.util.Set;
 import java.util.TreeSet;
 
+/**
+ * @author viper
+ */
 public class MaisonDeDisque {
     /**
      * Contient un histoire de la maison de disque (si un utilisateur veux bien se donner la peine de le remplir !!)
@@ -18,7 +22,7 @@ public class MaisonDeDisque {
     /**
      * Contient la liste des différents pays dans lesquels cette maison de disque opère
      */
-    private TreeSet<Pays> pays;
+    private Set<Pays> pays = new TreeSet<Pays>();
     /**
      * Site officiel de la maison de disque
      */

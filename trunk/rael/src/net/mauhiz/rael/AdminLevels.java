@@ -1,5 +1,15 @@
 package net.mauhiz.rael;
 
+/**
+ * @author mauhiz
+ */
 public enum AdminLevels {
-    // TODO : je sais pas utiliser les enums
+    /**
+     * 
+     */
+    ADMIN,
+    /**
+     * 
+     */
+    SOUSFIFRE;
 }

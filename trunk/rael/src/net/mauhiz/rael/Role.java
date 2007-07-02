@@ -5,7 +5,15 @@ package net.mauhiz.rael;
  * @author All Users
  */
 public class Role implements Comparable<Role> {
+    /**
+     * 
+     */
     private String metier;
+    /**
+     * @param other 
+     * @return ?
+     * @see java.lang.Comparable#compareTo(java.lang.Object)
+     */
     public int compareTo(final Role other) {
         // Simple classement par ordre alphabétique
         return this.metier.compareTo(other.metier);
