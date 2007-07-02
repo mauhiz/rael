@@ -12,41 +12,46 @@ import java.util.TreeSet;
  */
 public class Album implements Comparable<Album> {
     /**
+     * Ensemble des commentaire sur cet album
+     */
+    private Set<Commentaire> commentaires;
+    /**
      * Date de parution de l'album
      */
-    private Calendar       dateParution;
+    private Calendar         dateParution;
     /**
      * Release par défaut affichée par RAEL, les autres release étant accessible en cliquant un peu
      */
-    private Release        defaultRelease;
+    private Release          defaultRelease;
     /**
      * Jaquette par défaut de l'album, si il n'y en a pas d'autre spécifiée via freedb.
      */
-    private File           jaquetteDefault;
+    private File             jaquetteDefault;
     /**
      * Maison de disque ayant supervisee la production de l'album
      */
-    private MaisonDeDisque maisonDeDisque;
+    private MaisonDeDisque   maisonDeDisque;
     /**
      * Différentes releases du meme album (pour les identifier via freedb par exemple)
      */
-    private Set<Release>   releases = new TreeSet<Release>();
+    private Set<Release>     releases = new TreeSet<Release>();
     /**
      * La review de cet album, si elle existe
      */
-    private Review         review;
+    private Review           review;
     /**
      * Titre de l'album
      */
-    private String         titreAlbum;
+    private String           titreAlbum;
     /**
      * Utilisateur ayant ajouté cet album à la base de données
      */
-    private Utilisateur    userAjouteur;
+    private Utilisateur      userAjouteur;
 
     /**
      * Classement des albums par défaut selon leur date de parution.
-     * @param o 
+     * 
+     * @param o
      * @return ?
      * @see java.lang.Comparable#compareTo(java.lang.Object)
      */

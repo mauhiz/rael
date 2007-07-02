@@ -112,6 +112,10 @@ public class Utilisateur extends Humain {
         return pw;
     }
 
+    public String getPseudo() {
+        return this.pseudo;
+    }
+
     /**
      * Vérifie que la forme du pseudo est acceptable
      */
@@ -124,6 +128,7 @@ public class Utilisateur extends Humain {
      * Inscrit l'utilisateur dans la base de registre, après
      */
     public void register() {
+        this.dateInscription = Calendar.getInstance();
         // TODO : requete sql
     }
 }
