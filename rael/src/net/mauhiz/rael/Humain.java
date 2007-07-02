@@ -39,6 +39,9 @@ public class Humain implements Comparable<Humain> {
 
     /**
      * Simple Classement alphabétique, puis classement par date de naissance si 2 personnes s'appellent pareil
+     * @param o 
+     * @return ?
+     * @see java.lang.Comparable#compareTo(java.lang.Object)
      */
     public int compareTo(final Humain o) {
         if (this.nomDeFamille != o.nomDeFamille) {
