@@ -2,5 +2,45 @@
 <classpath>
 	<classpathentry path="src" kind="src"/>
 	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="site/WEB-INF/lib/commons-lang-2.3.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/ant-1.6.5.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/ant-antlr-1.6.5.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/ant-junit-1.6.5.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/ant-launcher-1.6.5.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/ant-swing-1.6.5.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/antlr-2.7.6.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/asm-attrs.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/asm.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/c3p0-0.9.1.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/cglib-2.1.3.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/checkstyle-all.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/cleanimports.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/commons-collections-2.1.1.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/commons-logging-1.0.4.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/concurrent-1.3.2.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/connector.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/dom4j-1.6.1.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/ehcache-1.2.3.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jaas.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jacc-1_0-fr.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/javassist.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jaxen-1.1-beta-7.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jboss-cache.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jboss-common.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jboss-jmx.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jboss-system.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jdbc2_0-stdext.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jgroups-2.2.8.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/jta.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/junit-3.8.1.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/log4j-1.2.11.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/oscache-2.1.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/proxool-0.8.3.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/swarmcache-1.0rc2.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/syndiag2.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/versioncheck.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/xerces-2.6.2.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/xml-apis.jar" kind="lib"/>
+	<classpathentry path="site/WEB-INF/lib/hibernate3.jar" kind="lib"/>
 	<classpathentry path="site/WEB-INF/classes" kind="output"/>
 </classpath>
