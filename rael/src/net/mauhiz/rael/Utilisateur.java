@@ -23,7 +23,7 @@ public class Utilisateur extends Humain {
     /**
      * on la compile en statique pour pas refaire ça à chaque instanciation.
      */
-    private static final Pattern PATTERN           = Pattern.compile("(\\w+)@(\\w+\\.)(\\w+)(\\.\\w+)*");
+    private static final Pattern PATTERN_EMAIL           = Pattern.compile("(\\w+)@(\\w+\\.)(\\w+)(\\.\\w+)*");
     /**
      * Adresse MSN de l'utilisateur
      */
@@ -101,7 +101,7 @@ public class Utilisateur extends Humain {
         // TODO: Vérifier que le regex fonctionne. Peut etre utiliser un regexjuste pour ca est un peu trop bourrin
         // INFO: inspiré de http://www.sitepoint.com/article/java-regex-api-explained
         // Get a Matcher based on the target string.
-        Matcher matcher = PATTERN.matcher(this.email);
+        Matcher matcher = PATTERN_EMAIL.matcher(this.email);
         if (matcher.matches()) {
             return true;
         }
