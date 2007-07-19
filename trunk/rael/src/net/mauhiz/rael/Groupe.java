@@ -34,6 +34,28 @@ public class Groupe {
     private String      website;
 
     /**
+     * Calcule la note moyenne d'un groupe, a partir des notes brutes, prises indépendamment de chaque album (Plus équitable car 1 seul vote ne fait pas beaucoup changer la moyenne)
+     * @return moyenne du groupe
+     */
+    public float noteMoyenneGroupeRepartie()
+    {
+        float total=0;
+        float n=0;
+        for(Album a : this.discographie)
+        {
+            for(Commentaire c : a.getCommentaires())
+            {
+                total += c.getNote();
+            }
+            n+=a.nombreCommentaires();
+        }
+        if(n==0) return Float.NaN;
+        return total/n;
+        // TODO: idée géniale, classer dans chaque page de Groupe, les albums sur une échelle (album qui sux <----< album qui rox), en faisant en sorte que la mise en page positionne les albums selon leur moyenne
+        
+    }
+    
+    /**
      * 
      */
     public Groupe() {

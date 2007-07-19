@@ -61,4 +61,54 @@ public class Album implements Comparable<Album> {
         }
         return this.dateParution.compareTo(o.dateParution);
     }
+    
+    /**
+     * Nombre de commentaires contenus dans le Set
+     * @return commentaires[].size
+     */
+    public int nombreCommentaires()
+    {
+        return this.commentaires.size();
+    }
+    
+    /**
+     * Moyenne des notes attribuées à cet album par les utilisateurs
+     * @return note moyenne, sur 20
+     */
+    public float noteMoyenneAlbum()
+    {
+        float n = 0;
+        for (Commentaire c : this.commentaires){
+            n += c.getNote();
+        }
+        return n/this.nombreCommentaires();
+    }
+
+    public Release getDefaultRelease() {
+        return defaultRelease;
+    }
+
+    public void setDefaultRelease(Release defaultRelease) {
+        this.defaultRelease = defaultRelease;
+    }
+
+    public File getJaquetteDefault() {
+        return jaquetteDefault;
+    }
+
+    public void setJaquetteDefault(File jaquetteDefault) {
+        this.jaquetteDefault = jaquetteDefault;
+    }
+
+    public MaisonDeDisque getMaisonDeDisque() {
+        return maisonDeDisque;
+    }
+
+    public void setMaisonDeDisque(MaisonDeDisque maisonDeDisque) {
+        this.maisonDeDisque = maisonDeDisque;
+    }
+
+    public Set < Commentaire > getCommentaires() {
+        return commentaires;
+    }
 }

@@ -44,4 +44,9 @@ public class Commentaire implements Comparable<Commentaire> {
         }
         return this.auteur.getPseudo().compareTo(o.auteur.getPseudo());
     }
+
+    
+    public float getNote() {
+        return this.note;
+    }
 }
